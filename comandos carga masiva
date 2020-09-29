@@ -1,6 +1,6 @@
 sudo docker start 0e544d994936	#iniciamos el repositorio
 
-sudo docker exec -it 0e544d994936	#entrar al contenedor
+sudo docker exec -it 0e544d994936 bash	#entrar al contenedor
 
 sh post_install.sh			        #iniciar oracle - para conectar
 
