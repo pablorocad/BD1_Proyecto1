@@ -1,0 +1,13 @@
+sudo docker start 0e544d994936	#iniciamos el repositorio
+
+sudo docker exec -it 0e544d994936	#entrar al contenedor
+
+sh post_install.sh			        #iniciar oracle - para conectar
+
+sudo docker cp "/home/pablorocad/Desktop/Pablo/USAC/8vo semestre/Bases de datos 1/Laboratorio/Proyecto/Proyecto 1/BD1_Proyecto1/Ctrl.ctl"  0e544d994936:/bases1
+
+sudo docker cp "/home/pablorocad/Desktop/Pablo/USAC/8vo semestre/Bases de datos 1/Laboratorio/Proyecto/Proyecto 1/BD1_Proyecto1/DataCenterData.csv"  0e544d994936:/bases1
+
+cd bases1
+
+sqlldr TEST/1234@ORCL18 control=Ctrl.ctl, DATA=DataCenterData.csv

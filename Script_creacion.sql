@@ -67,20 +67,20 @@ CREATE TABLE temp_informacion (
     nombre_compania     VARCHAR2(100),
     contacto_compania   VARCHAR2(100),
     correo_compania     VARCHAR2(100),
+    telefono_compania   VARCHAR2(20),
+    tipo               VARCHAR2(1),
+    nombre	        VARCHAR2(100),
+    correo              VARCHAR2(100),
     telefono            VARCHAR2(20),
-    tipo                CHAR(1),
-    nombre_persona      VARCHAR2(100),
-    correo_persona      VARCHAR2(100),
-    telefono_persona    VARCHAR2(20),
-    fecha_registro      DATE,
+    fecha_registro      VARCHAR2(100),
     direccion           VARCHAR2(250),
     ciudad              VARCHAR2(100),
-    codigo_postal       INTEGER,
+    codigo_postal       VARCHAR2(100),
     region              VARCHAR2(100),
     producto            VARCHAR2(100),
     categoria_producto  VARCHAR2(100),
-    cantidad            INTEGER,
-    precio_unitario     NUMBER(8, 2)
+    cantidad            VARCHAR2(100),
+    precio_unitario     VARCHAR2(100)
 );
 
 ALTER TABLE compra_venta
